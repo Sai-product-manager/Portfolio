@@ -809,49 +809,63 @@
         }
 
     
-        /* ===== SOFT LIGHT-MODE PHASE BADGES ===== */
-        html:not(.dark) .bg-blue-950\/80 {
-            background-color: #eef4ff !important;
-            border-color: #cbdcf8 !important;
-            color: #31558f !important;
+        /* ===== PHILOSOPHY PHASE BADGES — PREMIUM LIGHT MODE ===== */
+
+        /* Card 1: Discovery */
+        html:not(.dark) #philosophy .grid > div:nth-child(1) .flex.items-center.justify-between > span:first-child {
+            background: #eef2ff !important;
+            color: #3730a3 !important;
+            border: 1px solid #c7d2fe !important;
         }
 
-        html:not(.dark) .bg-blue-950\/80.text-blue-300,
-        html:not(.dark) .bg-blue-950\/80 * {
-            color: #31558f !important;
+        html:not(.dark) #philosophy .grid > div:nth-child(1) .flex.items-center.justify-between > span:last-child {
+            background: #e0e7ff !important;
+            color: #3730a3 !important;
+            border: 1px solid #a5b4fc !important;
         }
 
-        html:not(.dark) .bg-blue-950\/90 {
-            background-color: #eef4ff !important;
-            border-color: #cbdcf8 !important;
-            color: #31558f !important;
+        /* Card 2: AI Architecture */
+        html:not(.dark) #philosophy .grid > div:nth-child(2) .flex.items-center.justify-between > span:first-child {
+            background: #f5f3ff !important;
+            color: #6d28d9 !important;
+            border: 1px solid #ddd6fe !important;
         }
 
-        html:not(.dark) .bg-blue-950\/90.text-blue-300,
-        html:not(.dark) .bg-blue-950\/90 * {
-            color: #31558f !important;
+        html:not(.dark) #philosophy .grid > div:nth-child(2) .flex.items-center.justify-between > span:last-child {
+            background: #ede9fe !important;
+            color: #6d28d9 !important;
+            border: 1px solid #c4b5fd !important;
         }
 
-        /* Keep the other phase badges soft and professional */
-        html:not(.dark) .bg-indigo-950\/80,
-        html:not(.dark) .bg-indigo-950\/90 {
-            background-color: #f0f2ff !important;
-            border-color: #d4d9f5 !important;
-            color: #46558f !important;
+        /* Card 3: Execution & Delivery — replace the dark blue look */
+        html:not(.dark) #philosophy .grid > div:nth-child(3) .flex.items-center.justify-between > span:first-child {
+            background: #ecfdf5 !important;
+            color: #047857 !important;
+            border: 1px solid #a7f3d0 !important;
         }
 
-        html:not(.dark) .bg-purple-950\/80,
-        html:not(.dark) .bg-purple-950\/90 {
-            background-color: #f5f1ff !important;
-            border-color: #ddd2f5 !important;
-            color: #68489a !important;
+        html:not(.dark) #philosophy .grid > div:nth-child(3) .flex.items-center.justify-between > span:last-child {
+            background: #d1fae5 !important;
+            color: #047857 !important;
+            border: 1px solid #6ee7b7 !important;
         }
 
-        html:not(.dark) .bg-emerald-950\/80,
-        html:not(.dark) .bg-emerald-950\/90 {
-            background-color: #eefaf5 !important;
-            border-color: #c8eadb !important;
-            color: #277354 !important;
+        /* Card 4: Scale & Optimization */
+        html:not(.dark) #philosophy .grid > div:nth-child(4) .flex.items-center.justify-between > span:first-child {
+            background: #fffbeb !important;
+            color: #92400e !important;
+            border: 1px solid #fde68a !important;
+        }
+
+        html:not(.dark) #philosophy .grid > div:nth-child(4) .flex.items-center.justify-between > span:last-child {
+            background: #fef3c7 !important;
+            color: #92400e !important;
+            border: 1px solid #fcd34d !important;
+        }
+
+        /* Make the live prototype link unmistakable in both modes */
+        #projects a[href="https://prototype-venkatchelluri-fireflies-ai.lovable.app/"] {
+            text-decoration: none;
         }
 
     </style>
@@ -1256,10 +1270,11 @@
                             <button onclick="openCaseStudyModal('fireflies')" class="px-4 py-3 rounded-xl bg-[#1e293b]/90 hover:bg-[#334155] text-white text-xs font-extrabold transition-all text-center cursor-pointer">
                                 View Case Study
                             </button>
-                            <button onclick="switchSimulator('llm')" class="flex-1 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-extrabold transition-all text-center cursor-pointer flex items-center justify-center gap-2">
-                                <span>Fireflies Live Demo</span>
+                            <a href="https://prototype-venkatchelluri-fireflies-ai.lovable.app/"
+                               class="flex-1 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-extrabold transition-all text-center cursor-pointer flex items-center justify-center gap-2">
+                                <span>Fireflies Live Prototype</span>
                                 <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                            </button>
+                            </a>
                         </div>
                     </div>
 
